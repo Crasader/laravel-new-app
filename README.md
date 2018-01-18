@@ -1,6 +1,11 @@
 # Laravel New App - Step by Step
 Pratical step-by-step how to do a new app in Laravel 5.5 and set permissions correctly on linux
 
+### Prerequisites
+* Apache
+* PHP
+* Composer
+
 ### Step 1 - Create the project
 Considering that composer is installed, run
 ```
@@ -28,17 +33,11 @@ chown -R :www-data laravel-new-app/bootstrap/cache
 Set 775 permission to "storage" dir and "bootstrap/cache" dir
 ```
 chmod -R 775 laravel-new-app/storage
-chmod -R 775 laravel-new-app/cache
-```
-
-### Step 4 - Migrations (optional)
-Run the initial migrations in the project dir
-```
-php artisan migrate
+chmod -R 775 laravel-new-app/bootstrap/cache
 ```
 
 ### Note
-If any permission error appear while test the project, repeat step 3
+If any permission error appear while testing the project, repeat step 3.
 
 ## References
 * [Laravel docs](https://laravel.com/docs/5.5) - Laravel Documentation
