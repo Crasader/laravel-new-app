@@ -6,6 +6,10 @@ Pratical step-by-step how to do a new app in Laravel 5.5 and set permissions cor
 * PHP
 * Composer
 
+### Initial notes
+The project in this repo is just one example of a new app build in Laravel.
+If you cloned it you shouldn't run the first step.
+
 ### Step 1 - Create the project
 Considering that composer is installed, run
 ```
