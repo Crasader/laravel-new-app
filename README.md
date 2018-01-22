@@ -40,6 +40,23 @@ chmod -R 775 laravel-new-app/storage
 chmod -R 775 laravel-new-app/bootstrap/cache
 ```
 
+### Step 4 - Configure database
+On .env file set the database (mysql in this example)
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=mynewapp
+DB_USERNAME=usermysql
+DB_PASSWORD=passwordmysql
+```
+
+### Step 5 - Run migrations
+To test database and create the first tables run
+```
+php artisan migrate
+```
+
 ### Note
 If any permission error appear while testing the project, repeat step 3.
 
